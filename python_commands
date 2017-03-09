@@ -1,0 +1,2 @@
+#creating a list using for loop and range function
+lst = list(x for x in range(10))
