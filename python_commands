@@ -4,4 +4,4 @@ lst = list(x for x in range(10))
 #renaming columns
 passing it to df.columns = ['renamed_of_new_column1', 'renamed_of_new_column2']
 #printing entire data frame
-print(energy.to_string())
+print(df.to_string())
