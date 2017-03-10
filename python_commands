@@ -1,2 +1,4 @@
 #creating a list using for loop and range function
 lst = list(x for x in range(10))
+#if the format is list-like, even if you have to provide a single value, use [].
+
