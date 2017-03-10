@@ -1,4 +1,5 @@
 #creating a list using for loop and range function
 lst = list(x for x in range(10))
 #if the format is list-like, even if you have to provide a single value, use [].
-
+#renaming columns
+passing it to df.columns = ['renamed_of_new_column1', 'renamed_of_new_column2']
