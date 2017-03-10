@@ -5,3 +5,6 @@ lst = list(x for x in range(10))
 passing it to df.columns = ['renamed_of_new_column1', 'renamed_of_new_column2']
 #printing entire data frame
 print(df.to_string())
+#slicing, replacing strings in individual series or column from dataframe
+country = energy['Country'].str.replace(' \(', '(')
+country = energy['Country'].str.split('(').str.get(0)
