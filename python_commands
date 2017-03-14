@@ -3,8 +3,28 @@ lst = list(x for x in range(10))
 #if the format is list-like, even if you have to provide a single value, use [].
 #renaming columns
 passing it to df.columns = ['renamed_of_new_column1', 'renamed_of_new_column2']
+#deleting column
+del df['column name']
 #printing entire data frame
 print(df.to_string())
 #slicing, replacing strings in individual series or column from dataframe
 country = energy['Country'].str.replace(' \(', '(') ## \ is used as escape character. 
 country = energy['Country'].str.split('(').str.get(0)
+
+#setting, replacing index
+df.set_index('Index', drop = True, inplace=True)
+df1 = df.reset_index(drop = True)
+
+#Using map(), filter(), reduce() in python 3.0
+>>>def f(x): return x % 2 != 0 and x % 3 != 0
+...
+>>> list(filter(f, range(2, 25)))
+[5, 7, 11, 13, 17, 19, 23]
+>>> def cube(x): return x*x*x
+...
+>>> list(map(cube, range(1, 11)))
+[1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
+>>> import functools
+>>> def add(x,y): return x+y
+...
+>>> functools.reduce(add, range(1, 11))
