@@ -28,3 +28,6 @@ df1 = df.reset_index(drop = True)
 >>> def add(x,y): return x+y
 ...
 >>> functools.reduce(add, range(1, 11))
+
+#Getting index using Boolean mask, follwing commands gives list
+index = df[df['% Renewable'] == max].index.tolist()
