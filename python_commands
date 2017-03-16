@@ -38,3 +38,6 @@ series[series == series[2]].index[0]
 ###Always assign a copy of data frame if you want to process it unless you want to change original. If you assign original to new variable 
 and change that variable, the original also gets changed, unless the copy has made while assigning it to new variable. 
 new_variable_data_frame = old_variable_data_frame.copy()
+
+
+###There is a difference between type 'numpy.float64' and just 'float'. It may matter depending on the output requirement. 
