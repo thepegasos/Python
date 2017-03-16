@@ -29,8 +29,11 @@ df1 = df.reset_index(drop = True)
 ...
 >>> functools.reduce(add, range(1, 11))
 
-#Getting index using Boolean mask, follwing commands gives list
+#Getting index using Boolean mask of a data frame, follwing commands gives list
 index = df[df['% Renewable'] == max].index.tolist()
+
+#Getting index using Boolean mask of a series, follwing commands gives list
+series[series == series[2]].index[0]
 
 ###Always assign a copy of data frame if you want to process it unless you want to change original. If you assign original to new variable 
 and change that variable, the original also gets changed, unless the copy has made while assigning it to new variable. 
