@@ -45,7 +45,7 @@ new_variable_data_frame = old_variable_data_frame.copy()
 
 ###There is a difference between type 'numpy.float64' and just 'float'. It may matter depending on the output requirement. 
 
-#Iterative code to read a line from text file in raw format:
+#Iterative code to read a line from text file in raw format: (Refer documentation for 'f.readlines()' if following method does not suit the purpose)
 >>> f = open('university_towns.txt')
 >>> for line in f:
 >>>   hellos = repr(line)  # The repr() of a string adds string quotes and backslashes:
