@@ -48,5 +48,5 @@ new_variable_data_frame = old_variable_data_frame.copy()
 #Iterative code to read a line from text file in raw format:
 >>> f = open('university_towns.txt')
 >>> for line in f:
->>>   hellos = repr(line)
+>>>   hellos = repr(line)  # The repr() of a string adds string quotes and backslashes:
 >>>   print(hellos)
