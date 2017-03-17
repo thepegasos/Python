@@ -50,3 +50,6 @@ new_variable_data_frame = old_variable_data_frame.copy()
 >>> for line in f:
 >>>   output = repr(line)  # The repr() of a string adds string quotes and backslashes:
 >>>   print(output)
+
+#Getting an index of an item in the dataframe:
+index = df.index(item)
