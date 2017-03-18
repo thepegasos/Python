@@ -12,7 +12,8 @@ print(df.to_string())
 #slicing, replacing strings in individual series or column from dataframe
 country = energy['Country'].str.replace(' \(', '(') ## \ is used as escape character. 
 country = energy['Country'].str.split('(').str.get(0)
-#slicing using re.split
+
+#slicing using re.split #Used in coursera, course #1, Assignment 4
 import re
 re.split(' \(+', 'Words (words, words.')[0] #Have to pass each row individually, not on column
 ###re.split info and illustations:
@@ -23,6 +24,12 @@ Split string by the occurrences of pattern. If capturing parentheses are used in
 in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, 
 and the remainder of the string is returned as the final element of the list.
 Illustations:
+1. Code for column in data frame #This is twice as fast if tow functions are used per above method. (first replace and then split)
+>>> vector = []
+>>> for row in df.RegionName:
+>>>   row = re.split(' \(+', row)[0]
+>>>   vector.append(row)
+    
 >>> re.split('\W+', 'Words, words, words.')
 ['Words', 'words', 'words', '']
 >>> re.split('(\W+)', 'Words, words, words.')
