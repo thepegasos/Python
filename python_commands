@@ -25,6 +25,7 @@ in the pattern are also returned as part of the resulting list. If maxsplit is n
 and the remainder of the string is returned as the final element of the list.
 Illustations:
 1. Code for column in data frame #This is twice as fast if tow functions are used per above method. (first replace and then split)
+>>> import re
 >>> vector = []
 >>> for row in df.RegionName:
 >>>   row = re.split(' \(+', row)[0]
