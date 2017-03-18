@@ -12,7 +12,23 @@ print(df.to_string())
 #slicing, replacing strings in individual series or column from dataframe
 country = energy['Country'].str.replace(' \(', '(') ## \ is used as escape character. 
 country = energy['Country'].str.split('(').str.get(0)
-
+#slicing using re.split
+import re
+re.split(' \(+', 'Words (words, words.')[0] #Have to pass each row individually, not on column
+###re.split info and illustations:
+#format:
+re.split(pattern, string[, maxsplit=0])
+Explanation:
+Split string by the occurrences of pattern. If capturing parentheses are used in pattern, then the text of all groups 
+in the pattern are also returned as part of the resulting list. If maxsplit is nonzero, at most maxsplit splits occur, 
+and the remainder of the string is returned as the final element of the list.
+Illustations:
+>>> re.split('\W+', 'Words, words, words.')
+['Words', 'words', 'words', '']
+>>> re.split('(\W+)', 'Words, words, words.')
+['Words', ', ', 'words', ', ', 'words', '.', '']
+>>> re.split('\W+', 'Words, words, words.', 1)
+['Words', 'words, words.']
 #setting, replacing index
 df.set_index('Index', drop = True, inplace=True)
 df1 = df.reset_index(drop = True)
