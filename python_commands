@@ -77,3 +77,6 @@ new_variable_data_frame = old_variable_data_frame.copy()
 
 #Getting an index of an item in the dataframe:
 index = df.index(item)
+
+#Getting average(mean) of several columns in a data frame:
+df['avg'] = df[['Monday', 'Tuesday']].mean(axis=1)
