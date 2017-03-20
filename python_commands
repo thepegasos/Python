@@ -84,3 +84,5 @@ df['avg'] = df[['Monday', 'Tuesday']].mean(axis=1)
 #getting a key of a dictionary
 mydict.keys()[mydict.values().index(value)]
 mydict.keys()[mydict.values().index(16)]
+#getting a value of a dictionary
+dict.get(key, default=None)
