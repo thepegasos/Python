@@ -86,3 +86,9 @@ mydict.keys()[mydict.values().index(value)]
 mydict.keys()[mydict.values().index(16)]
 #getting a value of a dictionary
 dict.get(key, default=None)
+
+#Using dictionary to map values of a dataframe column
+df['new_column_name'] = df['column_which_needs_to_be_mapped_has_the_entries_similar_to_the_dictionary_keys'].map(dictionary_name)
+
+
+
