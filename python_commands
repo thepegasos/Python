@@ -91,5 +91,7 @@ dict.get(key, default=None)
 df['new_column_name'] = df['column_which_needs_to_be_mapped_has_the_entries_similar_to_the_dictionary_keys'].map(dictionary_name)
 
 ##Querying data frame, getting a row of a dataframe:
-df['Column_name'].iloc[[row_number]]
+df['Column_name'].iloc[row_number] #for getting a specific item
+#entire row of all columns:
+df.iloc[['row_number']]
 
