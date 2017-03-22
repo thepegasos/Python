@@ -96,6 +96,6 @@ df['Column_name'].iloc[row_number] #for getting a specific item
 df.iloc[['row_number']]
 OR TRY THIS - q4_1.T[['row_number']].T
 ##getting list of all the items in that row:
-list(q4_1.iloc['row_number'])
+print(list(q4_1.iloc['row_number']))
 
 
