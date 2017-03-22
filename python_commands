@@ -94,4 +94,4 @@ df['new_column_name'] = df['column_which_needs_to_be_mapped_has_the_entries_simi
 df['Column_name'].iloc[row_number] #for getting a specific item
 #entire row of all columns:
 df.iloc[['row_number']]
-
+OR TRY THIS - q4_1.T[['row_number']].T
