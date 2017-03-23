@@ -98,4 +98,7 @@ OR TRY THIS - q4_1.T[['row_number']].T
 ##getting list of all the items in that row:
 print(list(q4_1.iloc['row_number']))
 
+#Getting diagonal elements of a numpy array: (Assuming array has shape 3X3 like this:)
+>>> x = np.array([[1, 2, 3], [4, 5, 6]]
+>>> x.reshape(9)[::4]
 
