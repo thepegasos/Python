@@ -111,3 +111,8 @@ in a single row.
 #Getting index in mulitiindex:
 >>> df.index.get_level_values(0)
 >>> index.get_level_values('second')
+
+#inserting a thousand separator in a string of a number 
+>>> '{:,}'.format(1234567890)
+### For common string operators refer the link: https://docs.python.org/3/library/string.html#format-specification-mini-language
+
