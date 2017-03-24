@@ -119,4 +119,6 @@ in a single row.
 ### If data frame has word(label) index then getting an for getting integer index for that label index:
 df.index.get_loc('label_index_name')
 
+# Replacing a value in dataframe:
+df.replace(to_replace='item_to_replace', value='replacement_value', inplace=True/False)
 
