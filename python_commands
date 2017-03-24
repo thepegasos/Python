@@ -116,3 +116,7 @@ in a single row.
 >>> '{:,}'.format(1234567890)
 ### For common string operators refer the link: https://docs.python.org/3/library/string.html#format-specification-mini-language
 
+### If data frame has word(label) index then getting an for getting integer index for that label index:
+df.index.get_loc('label_index_name')
+
+
