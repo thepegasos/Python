@@ -107,3 +107,6 @@ first sort the first index (level 0) alphabetically -- then and then only all le
 in a single row. 
 # Function for sorting a list alphabetically:
 >>> sorted(list_name/column_name_in_dataframe)
+
+#Getting index in mulitiindex:
+>>> df.index.get_level_values(0)
