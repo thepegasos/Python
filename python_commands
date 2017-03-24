@@ -102,3 +102,8 @@ print(list(q4_1.iloc['row_number']))
 >>> x = np.array([[1, 2, 3], [4, 5, 6]]
 >>> x.reshape(9)[::4]
 
+### For grouping columns through multi-inidex with each row in index on3 (level 0) shows all of the releted rows in second index (level 1), 
+first sort the first index (level 0) alphabetically -- then and then only all level 1 entries related to specific level 0 would be 
+in a single row. 
+# Function for sorting a list alphabetically:
+>>> sorted(list_name/column_name_in_dataframe)
