@@ -127,3 +127,5 @@ df.index.get_loc('label_index_name')
 # Replacing a value in dataframe:
 df.replace(to_replace='item_to_replace', value='replacement_value', inplace=True/False)
 
+##Timeit magic function:
+>> %%timeit -n 10
