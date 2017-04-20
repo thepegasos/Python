@@ -156,3 +156,20 @@ but the append doesn't happen in-place, so you'll have to store the output if yo
 
 Notes: Method 1 is faster. Reason: Every time you call append, Pandas returns a copy of the original dataframe plus your new row. 
 This is called quadratic copy, and it is an O(N^2) operation that will quickly become very slow (especially since you have lots of data).
+
+Proof:
+>> %%timeit -n 100
+>> rec_brk = pd.DataFrame()
+>> for year in list(set(temp_min.Year)):
+>>     dict1 = {'Min Broken': len(temp_min[temp_min.Year == year]), 'Year': year, 'Max Broken': len(temp_max[temp_max.Year == year])}
+>>     rec_brk = rec_brk.append(dict1, ignore_index = True)
+[Output] 100 loops, best of 3: 41.1 ms per loop
+
+
+>> %%timeit -n 100
+>> rows_list= []
+>> for year in list(set(temp_min.Year)):
+>>     dict1 = {'Min Broken': len(temp_min[temp_min.Year == year]), 'Year': year, 'Max Broken': len(temp_max[temp_max.Year == year])}
+>>     rows_list.append(dict1)
+>> rec_brk = pd.DataFrame(rows_list)
+[Output] 100 loops, best of 3: 19.4 ms per loop
