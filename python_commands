@@ -179,3 +179,7 @@ http://stackoverflow.com/questions/14941366/pandas-sort-by-group-aggregate-and-c
 
 #Drop Duplicates rowwise in a particular column:
 new_df = old_df.drop_duplicates(['column_name'], keep = 'last')
+
+## Getting array of locations where the condition is true:
+>>> array_name = np.where(condition)
+[output]: array of elemetns of locations where the condition is true.
