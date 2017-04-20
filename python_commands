@@ -153,3 +153,6 @@ but the append doesn't happen in-place, so you'll have to store the output if yo
 0  0
 1  1
 2  2
+
+Notes: Method 1 is faster. Reason: Every time you call append, Pandas returns a copy of the original dataframe plus your new row. 
+This is called quadratic copy, and it is an O(N^2) operation that will quickly become very slow (especially since you have lots of data).
