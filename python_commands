@@ -135,6 +135,21 @@ unique_values = set(data_frame.column_name)
 **You may want ot convert it back into list. Simply converty using list() function**
 
 Creating Data frame from dictionary:
+A) Method 1:
 1. Create a dictionary.
 2. Append it to a list.
 3. Pass that row into dataframe. >>pd.DataFrame(row_list).
+
+B) Method 2:
+df = pd.DataFrame()
+>>> data = pd.DataFrame({"A": range(3)})
+>>> df.append(data)
+
+but the append doesn't happen in-place, so you'll have to store the output if you want it:
+
+>>> df = df.append(data)
+>>> df
+   A
+0  0
+1  1
+2  2
