@@ -173,3 +173,6 @@ Proof:
 >>     rows_list.append(dict1)
 >> rec_brk = pd.DataFrame(rows_list)
 [Output] 100 loops, best of 3: 19.4 ms per loop
+
+#Drop Duplicates rowwise in a particular column:
+new_df = old_df.drop_duplicates(['column_name'], keep = 'last')
