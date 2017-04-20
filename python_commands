@@ -174,5 +174,8 @@ Proof:
 >> rec_brk = pd.DataFrame(rows_list)
 [Output] 100 loops, best of 3: 19.4 ms per loop
 
+**Sorting through groupy and multiple columns (Link):
+http://stackoverflow.com/questions/14941366/pandas-sort-by-group-aggregate-and-column
+
 #Drop Duplicates rowwise in a particular column:
 new_df = old_df.drop_duplicates(['column_name'], keep = 'last')
