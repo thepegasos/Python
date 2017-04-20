@@ -129,3 +129,6 @@ df.replace(to_replace='item_to_replace', value='replacement_value', inplace=True
 
 ##Timeit magic function:
 >> %%timeit -n 10
+
+##Getting unique values out of very very large series: (if unique does not work, this will work)-- Tested on 73000 element array:
+unique_values = set(data_frame.column_name)
