@@ -202,6 +202,6 @@ new_df = old_df.drop_duplicates(['column_name'], keep = 'last')
 >>> for i in range(1,10000000):
 >>>    lst[i] = i
 
-4. Mod in Python: %
+4. Mod in Python: % -- Gives reminder of integer division
 >>> 15% 4
 [Out]: 3
