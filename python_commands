@@ -201,3 +201,7 @@ new_df = old_df.drop_duplicates(['column_name'], keep = 'last')
 >>> lst = list(range(10000000))
 >>> for i in range(1,10000000):
 >>>    lst[i] = i
+
+4. Mod in Python: %
+>>> 15% 4
+[Out]: 3
