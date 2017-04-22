@@ -183,3 +183,16 @@ new_df = old_df.drop_duplicates(['column_name'], keep = 'last')
 ## Getting array of locations where the condition is true:
 >>> array_name = np.where(condition)
 [output]: array of elemetns of locations where the condition is true.
+
+## Append,Extend, and '+':
+1. Append:
+>>> c = [1, 2, 3]
+>>> c.append(c)
+>>> c
+[Out]: [1, 2, 3, [...]]
+
+2. Extend and '+':
+>>> c=[1,2,3]
+>>> c.extend(c)
+>>> c
+[1, 2, 3, 1, 2, 3]
