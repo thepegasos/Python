@@ -221,3 +221,9 @@ please refer https://docs.python.org/2/library/datetime.html#strftime-and-strpti
 
 # Getting a month in a new column, day in a single tuple from a dataframe column using apply, and lambda functins. 
 >> data_df['Year'], data_df['Month-Day'] = zip(*data_df['Date'].apply(lambda x: (x.year,(x.month, x.day))))
+
+# Subsetting the data frame by giving list of values in the condition:
+suppose the list of values we are interested in is:
+>> lst = ['STREET', 'PARKING LOT/GARAGE(NON.RESID.)', 'ALLEY','GAS STATION','DRIVEWAY - RESIDENTIAL' ]
+>> Subsetted_dataset = df[df.column_name.isin(lst)]
+
