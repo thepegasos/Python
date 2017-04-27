@@ -205,3 +205,7 @@ new_df = old_df.drop_duplicates(['column_name'], keep = 'last')
 4. Mod in Python: % -- Gives reminder of integer division
 >>> 15% 4
 [Out]: 3
+
+# Converting an entire column of a dataframe from dates into Dates Format (inputs series, outputs series):
+series_name = pd.to_datetime(df.column_name, format="%m/%d/%y %H:%M")
+please refer https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior for formatting details.
