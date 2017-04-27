@@ -215,3 +215,9 @@ please refer https://docs.python.org/2/library/datetime.html#strftime-and-strpti
 
 # Getting a weekday of a date (here its assumed the date is not formated):
 >> datetime.datetime.strptime('January 11, 2010', '%B %d, %Y').strftime('%A')
+
+# Getting only month in a new column from a dataframe column using apply, and lambda functins.
+>> df['Month'] = df.Date.apply(lambda x: x.month) 
+
+# Getting a month in a new column, day in a single tuple from a dataframe column using apply, and lambda functins. 
+>> data_df['Year'], data_df['Month-Day'] = zip(*data_df['Date'].apply(lambda x: (x.year,(x.month, x.day))))
