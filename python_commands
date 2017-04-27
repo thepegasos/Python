@@ -206,6 +206,10 @@ new_df = old_df.drop_duplicates(['column_name'], keep = 'last')
 >>> 15% 4
 [Out]: 3
 
-# Converting an entire column of a dataframe from dates into Dates Format (inputs series, outputs series):
-series_name = pd.to_datetime(df.column_name, format="%m/%d/%y %H:%M")
+# Converting an entire column of a dataframe from dates into Dates Format (inputs series (tested for dtype Object), outputs series):
+>> series_name = pd.to_datetime(df.column_name, format="%m/%d/%y %H:%M")
+
+# Converting a single string into datetime:
+>> datetime.strptime('Aug 16 2015', '%b %d %Y')
 please refer https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior for formatting details.
+
