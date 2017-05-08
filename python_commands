@@ -234,3 +234,6 @@ suppose the list of values we are interested in is:
 >> lst = ['STREET', 'PARKING LOT/GARAGE(NON.RESID.)', 'ALLEY','GAS STATION','DRIVEWAY - RESIDENTIAL' ]
 >> Subsetted_dataset = df[df.column_name.isin(lst)]
 
+# Converting data from oject(string) of a column to float:
+>> df['rtmin'] = df['rtmin'].astype(str).astype(float)
+### First convert object to string and then to float.
