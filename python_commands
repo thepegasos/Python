@@ -9,9 +9,10 @@ del df['column name']
 df_reordered = df_original[['list_of_reordered_columns']]
 #printing entire data frame
 print(df.to_string())
-#slicing, replacing strings in individual series or column from dataframe
+#slicing, replacing,stripping strings in individual series or column from dataframe
 country = energy['Country'].str.replace(' \(', '(') ## \ is used as escape character. 
 country = energy['Country'].str.split('(').str.get(0)
+country = energy['Country'].str.strip('characters_to_strip_without_comma_just_write') ## Stripping the string by giving charactes.
 
 #slicing using re.split #Used in coursera, course #1, Assignment 4
 import re
