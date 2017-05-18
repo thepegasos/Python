@@ -238,3 +238,4 @@ suppose the list of values we are interested in is:
 # Converting data from oject(string) of a column to float:
 >> df['rtmin'] = df['rtmin'].astype(str).astype(float)
 ### First convert object to string and then to float.
+
