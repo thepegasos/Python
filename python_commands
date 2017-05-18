@@ -114,6 +114,9 @@ in a single row.
 df_sorted = df_copy.sort('column_name_to_sortwise').reset_index(drop = True) #along with resetting index, if required. Dont forget to make 
 a copy. Its safer that way!
 
+### Sorting through multiple columns in dataframe:
+>>> df = df.sort_values(['Device', 'Timestamp'], ascending=[True, False])
+
 #Getting index in mulitiindex:
 >>> df.index.get_level_values(0)
 >>> index.get_level_values('second')
