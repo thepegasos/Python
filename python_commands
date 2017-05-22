@@ -244,3 +244,5 @@ suppose the list of values we are interested in is:
 
 #Python String Formatting and escape characters link:
 https://www.tutorialspoint.com/python/python_strings.htm
+e.g. 
+>>> tail = "My name is %s and weight is %d kg!" % ('Zara', 21)
