@@ -242,3 +242,5 @@ suppose the list of values we are interested in is:
 >> df['rtmin'] = df['rtmin'].astype(str).astype(float)
 ### First convert object to string and then to float.
 
+#Python String Formatting and escape characters link:
+https://www.tutorialspoint.com/python/python_strings.htm
