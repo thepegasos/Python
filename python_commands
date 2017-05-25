@@ -246,3 +246,6 @@ suppose the list of values we are interested in is:
 https://www.tutorialspoint.com/python/python_strings.htm
 e.g. 
 >>> tail = "My name is %s and weight is %d kg!" % ('Zara', 21)
+
+#Link for reading a file frequently (particularly log files):
+https://stackoverflow.com/questions/5419888/reading-from-a-frequently-updated-file
