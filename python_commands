@@ -249,3 +249,8 @@ e.g.
 
 #Link for reading a file frequently (particularly log files):
 https://stackoverflow.com/questions/5419888/reading-from-a-frequently-updated-file
+
+#If open() gives some decoding error, use encoder.
+>>> op = open('pi_json.json',encoding='utf8')
+
+# If JSONDecoder error occures in json or json.load() or json.loads(), make sure each quote is proper ". Copy paste and see minute details if the two quotes are same. 
