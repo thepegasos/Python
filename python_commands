@@ -254,3 +254,9 @@ https://stackoverflow.com/questions/5419888/reading-from-a-frequently-updated-fi
 >>> op = open('pi_json.json',encoding='utf8')
 
 # If JSONDecoder error occures in json or json.load() or json.loads(), make sure each quote is proper ". Copy paste and see minute details if the two quotes are same. 
+# If Json.dumps(list_of_dictionaries) is giving an error 'Object of type 'int64' is not JSON serializable', use 'default=str' parameter:
+>>> json.dumps(list_of_dics,default=str)
+Link for further research and main problem behind the error: (The int may be numpy.int64, it should be python int), refer the link:
+https://stackoverflow.com/questions/11942364/typeerror-integer-is-not-json-serializable-when-serializing-json-in-python
+# Converting data types link:
+https://stackoverflow.com/questions/9452775/converting-numpy-dtypes-to-native-python-types
