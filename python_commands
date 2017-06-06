@@ -260,3 +260,6 @@ Link for further research and main problem behind the error: (The int may be num
 https://stackoverflow.com/questions/11942364/typeerror-integer-is-not-json-serializable-when-serializing-json-in-python
 # Converting data types link:
 https://stackoverflow.com/questions/9452775/converting-numpy-dtypes-to-native-python-types
+
+# SQL Decimal conversion link:
+https://docs.microsoft.com/en-us/sql/t-sql/data-types/decimal-and-numeric-transact-sql
