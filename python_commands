@@ -263,3 +263,14 @@ https://stackoverflow.com/questions/9452775/converting-numpy-dtypes-to-native-py
 
 # SQL Decimal conversion link:
 https://docs.microsoft.com/en-us/sql/t-sql/data-types/decimal-and-numeric-transact-sql
+
+# Taking a value associated with a variable:
+>>> eval('variable_name')
+eg. 
+>>> mgroups = ['df1','quake']
+>>>     for group in mgroups:
+               for row in eval(group).T:
+               ...
+               ...
+ In the above programme eval(group).T will be df1.T and quake.T where df1 and quake are the dataframe stored previously. 
+ Refer iPython notebook- PI_df_to_json_pi (1) in Google Drive> __PI_REST for implementation. 
