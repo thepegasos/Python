@@ -274,3 +274,7 @@ eg.
                ...
  In the above programme eval(group).T will be df1.T and quake.T where df1 and quake are the dataframe stored previously. 
  Refer iPython notebook- PI_df_to_json_pi (1) in Google Drive> __PI_REST for implementation illustration. 
+
+# Creating cron jobs at specified minutes, reference links to get started:
+1. https://stackoverflow.com/questions/16094545/cron-job-every-5-minutes-starting-from-a-specific-time
+2. https://unix.stackexchange.com/questions/239964/create-cron-jobs-to-repeat-every-x-units-of-time-starting-on-an-arbitary-unit
