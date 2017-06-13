@@ -281,3 +281,7 @@ eg.
 
 # Converting unix timestamp from seconds to datetime format:
 >>> datetime.datetime.fromtimestamp(int("timestamp_to_convert")).strftime('%Y-%m-%d %H:%M:%S')
+
+# Creating a python file for importing into another script:
+** Create empty file using notepad ++ first. Then copy and paste your code in windows plain notepad. Dont use notepad ++ for copying, 
+after importing the imported file/module will throw lot of errors. Mostly due to indentation. 
