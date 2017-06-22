@@ -285,3 +285,17 @@ eg.
 # Creating a python file for importing into another script:
 ** Create empty file using notepad ++ first. Then copy and paste your code in windows plain notepad. Dont use notepad ++ for copying, 
 after importing the imported file/module will throw lot of errors. Mostly due to indentation. 
+
+#Getting working directory in python:
+>>> import os
+>>> os.getcwd()
+
+# Getting list of files and directories in the current working directoy:
+>>> import os
+>>> os.listdire(os.curdir)
+
+# Chnaging the current working directoy in python:
+>>> import os
+>>> os.chdir('/path/to/change')
+
+
