@@ -217,6 +217,9 @@ new_df = old_df.drop_duplicates(['column_name'], keep = 'last')
 >> datetime.strptime('Aug 16 2015', '%b %d %Y')
 please refer https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior for formatting details.
 
+# Converting current time to timestamp(seconds) - epoch format:
+>> datetime.datetime.today().timestamp()
+
 # Getting a weekday of a date (here its assumed the date is not formated):
 >> datetime.datetime.strptime('January 11, 2010', '%B %d, %Y').strftime('%A')
 
