@@ -301,4 +301,9 @@ after importing the imported file/module will throw lot of errors. Mostly due to
 >>> import os
 >>> os.chdir('/path/to/change')
 
-
+# Using exec and eval to make a value of a variable a variable: (Execute and understand the following code)
+>>> lst=['strvar1', 'strvar2', 'strvar3']
+>>> for key in lst:
+>>> a = pd.DataFrame()
+>>> exec(key + "= a")
+>>> print(key, eval(key))
