@@ -307,3 +307,6 @@ after importing the imported file/module will throw lot of errors. Mostly due to
 >>> a = pd.DataFrame()
 >>> exec(key + "= a")
 >>> print(key, eval(key))
+
+# Beutiful Soup finding all tags in BS object:
+>>> [tag.name for tag in soup_object.find_all()]
