@@ -1,3 +1,4 @@
 # Children within children using Multiprocessing is not possible. It throws and error: "daemonic processes are not allowed to have children."
 # a*a*a is faster than a**3.
-# Python dictionaries are implemented as hash tables.
+# Python dictionaries are implemented as hash tables.Link for more info: https://stackoverflow.com/questions/9010222/how-can-python-dict-have-multiple-keys-with-same-hash
+see answer praveen-gollakota
