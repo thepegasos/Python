@@ -1,1 +1,2 @@
 # Children within children using Multiprocessing is not possible. It throws and error: "daemonic processes are not allowed to have children."
+a*a*a is faster than a**3.
