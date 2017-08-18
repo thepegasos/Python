@@ -2,3 +2,4 @@
 # a*a*a is faster than a**3.
 # Python dictionaries are implemented as hash tables.Link for more info: https://stackoverflow.com/questions/9010222/how-can-python-dict-have-multiple-keys-with-same-hash
 see answer praveen-gollakota
+# If you send the cookies with a request, you dont receive the cookies for the same request. 
