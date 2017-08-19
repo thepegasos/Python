@@ -7,3 +7,9 @@ see answer praveen-gollakota
 .der and .pem are encodings. While .cer, .crt, .key are the common extensions. pkcs7 and pkcs12 are may be alternatives to .der and .pem? Dont know.  
 Refer the link-
 https://support.ssl.com/Knowledgebase/Article/View/19/0/der-vs-crt-vs-cer-vs-pem-certificates-and-how-to-convert-them
+#cURL command to get the cookies back and sending with certificate file:
+Final command with saving cookies and sending a certificate:
+curl -k -d "j_username=tpcadmin&j_password=Passw0rd" --cert cert_pem.pem -X POST https://10.10.6.104:9569/srm/j_security_check -c cooks1234_WON.txt
+#sent from 10.10.6.136 C:\Users\Administrator
+#To convert a certificate just go windows machine, open the certificate>Details>copy to file>select base64 for .pem format. 
+#The key matter is still not sure though. 
