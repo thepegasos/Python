@@ -3,3 +3,7 @@
 # Python dictionaries are implemented as hash tables.Link for more info: https://stackoverflow.com/questions/9010222/how-can-python-dict-have-multiple-keys-with-same-hash
 see answer praveen-gollakota
 # If you send the cookies with a request, you dont receive the cookies for the same request. 
+#Info about Certificate Files (.der, .pem)-
+.der and .pem are encodings. While .cer, .crt, .key are the common extensions. pkcs7 and pkcs12 are may be alternatives to .der and .pem? Dont know.  
+Refer the link-
+https://support.ssl.com/Knowledgebase/Article/View/19/0/der-vs-crt-vs-cer-vs-pem-certificates-and-how-to-convert-them
