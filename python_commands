@@ -310,3 +310,9 @@ after importing the imported file/module will throw lot of errors. Mostly due to
 
 # Beutiful Soup finding all tags in BS object:
 >>> [tag.name for tag in soup_object.find_all()]
+
+#Using constant in map:
+>>> from operator import add
+>>> from itertools import repeat
+>>> list(map(add, [1,2,3], repeat(4)))
+>>> list(map(add, [1,2,3], repeat(4)))
