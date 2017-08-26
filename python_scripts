@@ -1,5 +1,5 @@
 #Different data sets on the same x-axis along with different y-axis and on the same plot. Copy-Paste the following code. 
-#Multiple Plots on same graph script
+#Multiple Plots on same graph script- working
 %matplotlib notebook
 import matplotlib.pyplot as plt
 import numpy as np
@@ -9,7 +9,7 @@ np.random.seed(1977)
 fig, ax = plt.subplots()
 
 # Twin the x-axis twice to make independent y-axes.
-axes = [ax, ax.twinx(), ax.twinx()]
+axes = [ax, ax.twinx(),ax.twinx()]
 
 # Make some space on the right side for the extra y-axis.
 fig.subplots_adjust(right=0.75)
@@ -23,12 +23,15 @@ axes[-1].set_frame_on(True)
 axes[-1].patch.set_visible(False)
 
 # And finally we get to plot things...
-colors = ('Green', 'Red', 'Blue')
-for ax, color in zip(axes, colors):
-    data = np.random.random(1) * np.random.random(10)
+colors = ['Green', 'Red', 'Blue']
+data = [np.random.random(1) * np.random.random(5), np.random.random(1) * np.random.random(10), 10*np.random.random(10) * np.random.random(10)]
+def plts(ax, color, data):
+    #data = np.random.random(1) * np.random.random(10)
     ax.plot(data, marker='o', linestyle='none', color=color)
     ax.set_ylabel('%s Thing' % color, color=color)
     ax.tick_params(axis='y', colors=color)
-axes[0].set_xlabel('X-axis')
 
+
+list(map(plts, axes, colors, data))
+axes[0].set_xlabel('X-axis')
 plt.show()
