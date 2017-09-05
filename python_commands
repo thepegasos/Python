@@ -317,3 +317,10 @@ after importing the imported file/module will throw lot of errors. Mostly due to
 >>> from itertools import repeat
 >>> list(map(add, [1,2,3], repeat(4)))
 >>> list(map(add, [1,2,3], repeat(4)))
+
+#Selecting certain columns/rows out of all available columns in pandas:
+
+X = df.iloc[:,:-1]
+y = df.iloc[:,-1]
+
+#this will select all rows with all columns except  the last one in X and last one in y. (Example from Coursera ML Assignment-3, Q2).
