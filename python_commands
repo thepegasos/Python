@@ -13,6 +13,7 @@ print(df.to_string())
 country = energy['Country'].str.replace(' \(', '(') ## \ is used as escape character. 
 country = energy['Country'].str.split('(').str.get(0)
 country = energy['Country'].str.strip('characters_to_strip_without_comma_just_write') ## Stripping the string by giving charactes.
+#.strip will strip any permutation of strings that you give, until it hits a character out of the given list. 
 
 #slicing using re.split #Used in coursera, course #1, Assignment 4
 import re
