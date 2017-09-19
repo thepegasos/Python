@@ -13,3 +13,5 @@ curl -k -d "j_username=tpcadmin&j_password=Passw0rd" --cert cert_pem.pem -X POST
 #sent from 10.10.6.136 C:\Users\Administrator
 #To convert a certificate just go windows machine, open the certificate>Details>copy to file>select base64 for .pem format. 
 #The key matter is still not sure though. 
+#time.clock() and time.time() difference Link. time.clock() is an excellent measuere for benchmarking performance of an algorithm. 
+https://stackoverflow.com/questions/17498199/why-are-there-differences-in-python-time-time-and-time-clock-on-mac-os-x
