@@ -324,3 +324,14 @@ X = df.iloc[:,:-1]
 y = df.iloc[:,-1]
 
 #this will select all rows with all columns except  the last one in X and last one in y. (Example from Coursera ML Assignment-3, Q2).
+
+#Using zip to send multiple arguments to map Execute the following cod eand understand what its doing:
+>>> a = [1,2,3]
+>>> b = [4,5,6]
+>>> def addi(tups):
+>>>    y = tups[0]
+>>>    z = tups[1]
+>>>    print(y+z)
+>>>    return 
+>>> s = map(addi, zip(a,b))
+>>> list(s)
