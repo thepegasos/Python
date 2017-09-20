@@ -15,3 +15,9 @@ curl -k -d "j_username=tpcadmin&j_password=Passw0rd" --cert cert_pem.pem -X POST
 #The key matter is still not sure though. 
 #time.clock() and time.time() difference Link. time.clock() is an excellent measuere for benchmarking performance of an algorithm. 
 https://stackoverflow.com/questions/17498199/why-are-there-differences-in-python-time-time-and-time-clock-on-mac-os-x
+# When using multiprocessing.Pool, by default the processes are created as daemonic. You will have to write a override sub-class 
+to change that. 
+#refer this link and go through multithreading course by Satish on udemy. 
+#link: https://stackoverflow.com/questions/6974695/python-process-pool-non-daemonic
+#also refer this from your MAC: 
+http://localhost:8890/notebooks/Desktop/Applications/Google_Drive/__python_practice/_Intro_to_machine_learning/multi-multi_processing_error_working_muliti_multi_threading.ipynb
