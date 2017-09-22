@@ -335,3 +335,12 @@ y = df.iloc[:,-1]
 >>>    return 
 >>> s = map(addi, zip(a,b))
 >>> list(s)
+
+#Getting a key from a value of a dictionary in python 3:
+>>> mydict = {'george':16,'amber':19}
+>>> print(list(mydict.keys())[list(mydict.values()).index(16)]) # Prints george
+
+
+in python 2.7:
+>>> mydict = {'george':16,'amber':19}
+>>> print mydict.keys()[mydict.values().index(16)] # Prints george
