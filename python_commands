@@ -344,3 +344,8 @@ y = df.iloc[:,-1]
 in python 2.7:
 >>> mydict = {'george':16,'amber':19}
 >>> print mydict.keys()[mydict.values().index(16)] # Prints george
+
+#Finding difference between two strings:
+>>> s1 = 'HELPMEPLZ'
+>>> s2 = 'HELPNEPLX'
+>>> [i for i in xrange(len(s1)) if s1[i] != s2[i]]
