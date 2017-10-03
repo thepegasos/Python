@@ -21,3 +21,5 @@ to change that.
 #link: https://stackoverflow.com/questions/6974695/python-process-pool-non-daemonic
 #also refer this from your MAC: 
 http://localhost:8890/notebooks/Desktop/Applications/Google_Drive/__python_practice/_Intro_to_machine_learning/multi-multi_processing_error_working_muliti_multi_threading.ipynb
+#installing python on Linux using configure and make:
+https://stackoverflow.com/questions/8087184/problems-installing-python3-on-rhel
