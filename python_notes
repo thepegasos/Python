@@ -23,3 +23,6 @@ to change that.
 http://localhost:8890/notebooks/Desktop/Applications/Google_Drive/__python_practice/_Intro_to_machine_learning/multi-multi_processing_error_working_muliti_multi_threading.ipynb
 #installing python on Linux using configure and make:
 https://stackoverflow.com/questions/8087184/problems-installing-python3-on-rhel
+
+#Getting a gender by giving a fist name:
+https://api.genderize.io/?name=akash
