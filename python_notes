@@ -26,3 +26,10 @@ https://stackoverflow.com/questions/8087184/problems-installing-python3-on-rhel
 
 #Getting a gender by giving a fist name:
 https://api.genderize.io/?name=akash
+
+#Giving files for path in different operating systems: 
+Use 
+>>> os.path.join( "C:", "meshes", "as" )
+
+#For windows if giving path to a directory withing current working folder:
+Give 'directory_name\file_name.extension_name' as path instead of '\directory_name\file_name.extension_name'
