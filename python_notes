@@ -33,3 +33,4 @@ Use
 
 #For windows if giving path to a directory withing current working folder:
 Give 'directory_name\file_name.extension_name' as path instead of '\directory_name\file_name.extension_name'
+Note: Sometimes you may have to use '\\' instead of just one '\'.
