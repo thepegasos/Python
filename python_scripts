@@ -61,3 +61,5 @@ name,phone,street
 Bob,0893,32 Silly
 James,000,400 McHilly
 Smithers,4442,23 Looped St.
+## Reading a line one by one using generator expression and excuding any line starting with #, use this as reader variable-
+>>> reader = csv.DictReader(row for row in f if not row.startswith('#'))
