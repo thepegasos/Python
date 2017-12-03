@@ -349,3 +349,23 @@ in python 2.7:
 >>> s1 = 'HELPMEPLZ'
 >>> s2 = 'HELPNEPLX'
 >>> [i for i in xrange(len(s1)) if s1[i] != s2[i]]
+
+#Adding a column to a dataframe with different length (more elements than length of df index)
+>>> dic_for_df = {0: {0: 0, 1: 1, 2: 2},
+ 1: {0: ' first name0', 1: ' first name1', 2: ' first name2'},
+ 2: {0: ' last name0', 1: ' last name1', 2: None},
+ 3: {0: 0, 1: 1, 2: 2},
+ 4: {0: ' first name0', 1: ' first name1', 2: ' first name2'},
+ 5: {0: ' last name0', 1: ' last name1', 2: None},
+ 'new': {0: 1, 1: 2, 2: 3}}  #define a dictionary to form df for illustartion
+>>> dfc = pd.DataFrame(dic_for_df)       #form a df
+>>> new_col=pd.Series([1,2,3,4,5])       #define a new column that you want to add to df
+>>> new_col_dic = new_col.to_dict()      #convert that series into dict
+>>> dic = dfc.to_dict()                  #make a dictionary of your df
+>>> dic['6'] = new_col_dic               #add your new column dictionary to your df dictionary
+>>> finally_solved = pd.DataFrame(dic)   #form a dataframe from the updated dictionary
+>>> dfc1 = dfc.copy()                    #to illustrate the difference between above (dictionary) method and direct assignment when length of new assigned column is greater than length of dataframe index
+>>> dfc1['new_col'] = new_col            #execute the code and see the difference between dfc1 dataframe and finally_solved dataframe
+
+#Note: if length of new column is less than length of dictionary, then you may assign directly, Na values will be populated automatically based on missing index in new series; no need to go by dictionary method
+
