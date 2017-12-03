@@ -367,5 +367,5 @@ in python 2.7:
 >>> dfc1 = dfc.copy()                    #to illustrate the difference between above (dictionary) method and direct assignment when length of new assigned column is greater than length of dataframe index
 >>> dfc1['new_col'] = new_col            #execute the code and see the difference between dfc1 dataframe and finally_solved dataframe
 
-#Note: if length of new column is less than length of dictionary, then you may assign directly, Na values will be populated automatically based on missing index in new series; no need to go by dictionary method
+#Note: if length of new column is less than length of index if dataframe, then you may assign directly, Na values will be populated automatically based on missing index in new series; no need to go by dictionary method
 
