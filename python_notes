@@ -37,3 +37,6 @@ Note: Sometimes you may have to use '\\' instead of just one '\'.
 
 #for displaying json in pretty format on linux, needs python:
 cat some.json | python -m json.tool
+
+#Reference for character sets and encoding:
+https://www.w3schools.com/charsets/ref_html_8859.asp
