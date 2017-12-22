@@ -369,3 +369,15 @@ in python 2.7:
 
 #Note: if length of new column is less than length of index if dataframe, then you may assign directly, Na values will be populated automatically based on missing index in new series; no need to go by dictionary method
 
+#Storing output of linux command into variable and processing it using regular expression:
+#Use case here: Getting the character set of the text file in linux using "file" command. 
+#file command syntax for linux is: $file -bi <file_name>
+#Code-
+>>> import subprocess
+>>> result=subprocess.run(['file','-bi','Uninstall_IBMStreams4.2.0.0_Summary.0.log'], stdout=subprocess.PIPE)
+>>> a=str(result.stdout)
+>>> a
+"b'text/plain; charset=us-ascii\\n'"
+>>> re.findall('[\S\s]*charset=([\S]*)\\\\',a)  #for catching single '\' (backslash character), four '\' are required in python re
+['us-ascii']
+
