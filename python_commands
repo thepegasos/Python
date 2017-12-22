@@ -378,6 +378,6 @@ in python 2.7:
 >>> a=str(result.stdout)
 >>> a
 "b'text/plain; charset=us-ascii\\n'"
->>> re.findall('[\S\s]*charset=([\S]*)\\\\',a)  #for catching single '\' (backslash character), four '\' are required in python re
+>>> re.findall('[\S\s]*charset=([\S]*)\\\\n',a)  
 ['us-ascii']
 
