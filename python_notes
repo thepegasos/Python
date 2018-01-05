@@ -40,3 +40,6 @@ cat some.json | python -m json.tool
 
 #Reference for character sets and encoding:
 https://www.w3schools.com/charsets/ref_html_8859.asp
+
+#compiling to c using nuitka
+https://sourcecontribute.com/2015/05/02/compiling-python-to-standalone-executables-on-linux-using-nuitka/
