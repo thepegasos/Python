@@ -381,3 +381,5 @@ in python 2.7:
 >>> re.findall('[\S\s]*charset=([\S]*)\\\\n',a)  #refer https://docs.python.org/2/howto/regex.html for catching backslashes '\\' in pyhton re
 ['us-ascii']
 
+
+
