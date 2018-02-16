@@ -43,3 +43,8 @@ https://www.w3schools.com/charsets/ref_html_8859.asp
 
 #compiling to c using nuitka
 https://sourcecontribute.com/2015/05/02/compiling-python-to-standalone-executables-on-linux-using-nuitka/
+
+#If you are going to write try and except, make sure syntactically all statements inside try are correct and valid. If the syntax is wrong,
+then it will fail and come out of try block. Then it becomes very hard to catch the error. eg. In Statseeker code wrote just lnk instead
+of lnk['key']. Since lnk was as dictionary, and the expected value was string, it was going out of try to except block and had to spend 
+a lot of time to find the error (finally did though!)
