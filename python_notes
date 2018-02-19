@@ -48,3 +48,8 @@ https://sourcecontribute.com/2015/05/02/compiling-python-to-standalone-executabl
 then it will fail and come out of try block. Then it becomes very hard to catch the error. eg. In Statseeker code wrote just lnk instead
 of lnk['key']. Since lnk was as dictionary, and the expected value was string, it was going out of try to except block and had to spend 
 a lot of time to find the error (finally did though!)
+
+#requests sending a header to keep 'keep-aliv' closed
+s=requests.Session()
+s.headers.update({"Connection": "close"})
+
