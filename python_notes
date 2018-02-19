@@ -59,3 +59,5 @@ excellent explanation - http://effbot.org/zone/thread-synchronization.htm -- see
 When can list be not thread safe - https://stackoverflow.com/questions/6319207/are-lists-thread-safe -- refer answer by Thomas
 Example of thread unsafety - https://stackoverflow.com/questions/11786530/can-python-threads-access-variables-in-the-namespace
 FYI - appending to list is thead safe
+Are local variables thread safe? Yes, refer https://www.quora.com/Are-local-variables-in-a-python-function-thread-safe for answer
+Also, wiki link about thread safety - https://en.wikipedia.org/wiki/Thread_safety
