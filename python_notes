@@ -61,3 +61,9 @@ Example of thread unsafety - https://stackoverflow.com/questions/11786530/can-py
 FYI - appending to list is thead safe
 Are local variables thread safe? Yes, refer https://www.quora.com/Are-local-variables-in-a-python-function-thread-safe for answer
 Also, wiki link about thread safety - https://en.wikipedia.org/wiki/Thread_safety
+
+#Very Important concept about lists:
+l=[[]]*2
+l[0].append(1)
+Out [286]: [[1], [1]]
+refer https://stackoverflow.com/questions/7255383/python-list-append-behavior
