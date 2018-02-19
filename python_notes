@@ -67,3 +67,19 @@ l=[[]]*2
 l[0].append(1)
 Out [286]: [[1], [1]]
 refer https://stackoverflow.com/questions/7255383/python-list-append-behavior
+
+
+a=[1,2]
+b=[3,4]
+a.append(b)
+b.append(5)
+print a
+print b
+This will print 
+a=[1,2,[3,4,5]]
+b=[3,4,5] 
+This because you dont append copy of list, you append references. 
+Do this for appending copy-
+a.append(b[:]) or a.append(list(b))
+Refer 
+https://stackoverflow.com/questions/39689892/how-does-python-append-to-list-work
