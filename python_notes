@@ -83,3 +83,7 @@ Do this for appending copy-
 a.append(b[:]) or a.append(list(b))
 Refer 
 https://stackoverflow.com/questions/39689892/how-does-python-append-to-list-work
+
+
+Converting timestamps best practices:
+https://www.saltycrane.com/blog/2009/05/converting-time-zones-datetime-objects-python/
