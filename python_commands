@@ -389,4 +389,7 @@ df = col1 col2
       a    b
       c    d
 
+#Python Date Parser Function using Pandas, IF the date sample has timestamp as "08:25PM EDT" and you want to disregard the timezone, then:
+df = pd.read_csv('untitled text.txt', sep = '\t', parse_dates=['Departure'], date_parser=lambda x: pd.to_datetime(x.rpartition(' ')[0]))
+
 
