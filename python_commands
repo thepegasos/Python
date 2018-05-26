@@ -393,3 +393,11 @@ df = col1 col2
 df = pd.read_csv('untitled text.txt', sep = '\t', parse_dates=['Departure'], date_parser=lambda x: pd.to_datetime(x.rpartition(' ')[0]))
 
 
+#Excellent example of nested lambda (made by me)
+What it will do:
+#divide specific column by 60; verify that the object is either float or int, 
+if the object is string then see if its digit, if digit then convert to float and divide by 60
+or else see of the object is None, if NOne then put 'thisIsNone' there else put 'nothing'
+
+df = pd.DataFrame({'col1':['30',None,32], 'col2':[60,70,80]})
+df['col1'] = df['col1'].apply(lambda y: float(y)/60.0 if (type(y) is int) or type(y) is float or str(y).isdigit() else ('thisIsNone' if y is None else 'nothing'))
