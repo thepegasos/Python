@@ -399,5 +399,6 @@ What it will do:
 if the object is string then see if its digit, if digit then convert to float and divide by 60
 or else see of the object is None, if NOne then put 'thisIsNone' there else put 'nothing'
 
-df = pd.DataFrame({'col1':['30',None,32], 'col2':[60,70,80]})
-df['col1'] = df['col1'].apply(lambda y: float(y)/60.0 if (type(y) is int) or str(y).isdigit() else ('thisIsNone' if y is np.isnan(y) else 'nothing'))
+df = pd.DataFrame({'col1':['30',np.nan,32], 'col2':[60,70,80]})
+out = df['col1'].apply(lambda y: float(y)/60.0 if (type(y) is int) or str(y).isdigit() else ('thisIsNone' if np.isnan(y) else 'nothing'))
+
