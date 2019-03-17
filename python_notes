@@ -87,3 +87,11 @@ https://stackoverflow.com/questions/39689892/how-does-python-append-to-list-work
 
 Converting timestamps best practices:
 https://www.saltycrane.com/blog/2009/05/converting-time-zones-datetime-objects-python/
+
+
+Printing Jupyter notebook in color (full lines, without cut which happens in exported pdf)
+In chrome, either select all and click Print. In the print options, enable 'selection only' > Print
+OR 
+Refer this link: 
+https://github.com/jupyter/notebook/issues/840#issuecomment-236828551
+Basically remove color:#000 from exported HTML, open that again in Safari and Print :)
