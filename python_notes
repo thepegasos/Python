@@ -95,3 +95,8 @@ OR
 Refer this link: 
 https://github.com/jupyter/notebook/issues/840#issuecomment-236828551
 Basically remove color:#000 from exported HTML, open that again in Safari and Print :)
+
+Multi-level argparse in Python (parsing commands like git)
+https://chase-seibert.github.io/blog/2014/03/21/python-multilevel-argparse.html
+
+
